@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
+    <RootNamespace>NFS_Color_Picker</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <ApplicationIcon>Properties\Logo.ico</ApplicationIcon>
+    <Nullable>disable</Nullable>
+    <PackageIcon></PackageIcon>
+    <Authors>FiLixsi</Authors>
+    <Version>1.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="NFSColorRX.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputPath>$(ProjectDir)$(MSBuildProjectName)\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <Company />
+    <BaseOutputPath>Temp\</BaseOutputPath>
+    <BaseIntermediateOutputPath>Temp\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <Target Name="RemoveTempDirectoryOnClean" AfterTargets="Clean">
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" Condition=" Exists('$(BaseIntermediateOutputPath)') " />
+    <RemoveDir Directories="$(BaseOutputPath)" Condition=" Exists('$(BaseOutputPath)') " />
+    <RemoveDir Directories="$(MSBuildProjectExtensionsPath)" Condition=" Exists('$(MSBuildProjectExtensionsPath)') " />
+  </Target>
+</Project>

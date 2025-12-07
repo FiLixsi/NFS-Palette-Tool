@@ -1,8 +1,15 @@
-Simple tool for adjusting colors in RGBA Format.  
-You can make changes to GLOBAL files using NFS-VltEd or OGVI tools (In Tool you need to Copy Decimal).  
-Clicking on the Color Box will allow you to pick a color from the Windows Color Panel.  
+## NFS Color R-X
+<img align="right" width="128" height="128" alt="NFSColorPicker" src="https://github.com/user-attachments/assets/8d79914d-c2b0-463d-a4e4-0cfdb96993c5" />
+A compact and handy utility for working with color data in Need for Speed games.  
+Whether you want to identify an existing color or create a new one, this tool helps you easily decode and adjust RGBA or XYZ values with precision. 
 
-There are two modes: RGB and XYZ. (A/W is Transparency).  
-RGBA is used for particles (In Attributes: emitterdata).  
-XYZW is used for car effects (In Attributes: light_flares_cg).  
+## Features:
+* Read and edit colors in RGBA or XYZW formats.
+* Instant Windows Color Panel integration for easy color selection.
+* Decimal format for quick use in tools like NFS-VltEd or OGVI.
+* Clear distinction between color usage types:
+  * RGB — for particles (emitterdata).
+  * XYZ — for car effects (timeofday, light_flares_cg).
+
+## Images:
 <img width="420" height="215" alt="image" src="https://github.com/user-attachments/assets/2b6c356e-11cb-42a6-9552-bacc1bc46a72" />

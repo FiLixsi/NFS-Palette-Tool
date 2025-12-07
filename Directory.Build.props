@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildProjectExtensionsPath>Temp\</MSBuildProjectExtensionsPath>
+  </PropertyGroup>
+</Project>
